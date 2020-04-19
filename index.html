@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike | Product Card</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-
-</head>
-<body>
-    <div class="product-card"> 
-        <h1>Air Jordan 1 Mid SE</h1>
-        <p>The Air Jordan 1 Mid SE maintains the timeless appeal of the OG AJ1, revamped with fresh colours and premium materials.</p>
-        <div class="product-pic"></div>
-        <div class="product-colors">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nike|Product Card</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="product-card">
+         <h1>Air Jordan 1 Mid SE</h1>
+         <p>The Air Jordan 1 Mid SE maintains the timeless appeal of the OG AJ1, revamped with fresh colours and premium materials.</p>
+         <div class="product-pic"></div>
+         <div class="product-colors">
             <span class="black active" data-color="#3d3d3d" data-pic="url(./images/1.jpg)"></span>
             <span class="yellow" data-color="#f6b93b" data-pic="url(./images/2.jpg)"></span>
             <span class="blue" data-color="#1e3799" data-pic="url(./images/3.jpg)"></span>
             <span class="rose" data-color="#ffb8b8" data-pic="url(./images/4.jpg)"></span>
-        </div>
-        <div class="product-info">
+         </div>
+         <div class="product-info">
             <div class="product-price">
-                $250
+               $150
             </div>
             <a href="#" class="product-button">Add to Cart</a>
-        </div>
-    </div>
-    
-    <script>
-        $(".product-colors span").click(function(){
-        $(".product-colors span").removeClass("active");
-        $(this).addClass("active");
-        $("body").css("background",$(this).attr("data-color"));
-        $(".product-price").css("color",$(this).attr("data-color"));
-        $(".product-button").css("color",$(this).attr("data-color"));
-        $(".product-pic").css("background-image",$(this).attr("data-pic"));
-        });
-    </script>
-</body>
+         </div>
+      </div>
+      <script>
+         $(".product-colors span").click(function(){
+         $(".product-colors span").removeClass("active");
+         $(this).addClass("active");
+         $("body").css("background",$(this).attr("data-color"));
+         $(".product-price").css("color",$(this).attr("data-color"));
+         $(".product-button").css("color",$(this).attr("data-color"));
+         $(".product-pic").css("background-image",$(this).attr("data-pic"));
+         });
+      </script>
+   </body>
 </html>
